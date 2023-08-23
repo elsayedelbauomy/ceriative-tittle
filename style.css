@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    background-color: #fff;
+    padding: 1em;
+    width: 400px; 
+   
+}
+
+.parent >  h2:first-child{
+    margin-bottom:15px ;
+}
+
+.parent div {
+    padding-top:2em ;
+     font-weight: bold;
+     position: relative;
+    
+}
+
+.parent >  h2:last-child {
+    margin-top: 50px;
+}
+
+.parent > div:nth-child(2) {
+    color: rgb(0, 149, 255);
+}
+.parent > div:nth-child(3) {
+    color: red;
+}
+.parent > div:nth-child(4) {
+    color: green;
+}
+.parent > div:nth-child(5) {
+    color: rgb(198, 111, 11);
+}
+
+.parent > div:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 60px;
+    left: 5px;
+    background-image:linear-gradient(to right , rgb(0, 149, 255) 50%, rgb(0, 149, 255) 50% , #ccc 50% , #ccc 100% ) ;
+}
+.parent > div:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 60px;
+    left: 5px;
+    background-image:linear-gradient(to right , red 50%, red 50% , #ccc 50% , #ccc 100% , #ccc 100% ) ;
+}
+.parent > div:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 60px;
+    left: 5px;
+    background-image:linear-gradient(to right , green 50%, green 50% , #ccc 50% , #ccc 100% ) ;
+}
+.parent > div:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    top: 60px;
+    left: 5px;
+    background-image:linear-gradient(to right , rgb(198, 111, 11) 50%, rgb(198, 111, 11)50% , #ccc 50% , #ccc 100% ) ;
+}
+
+.parent > div:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 53px;
+    left: 0px;
+    background-color: rgb(0, 149, 255);
+    border-radius: 50%;
+}
+
+
+.parent > div:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 53px;
+    left: 0px;
+    background-color: red;
+    border-radius: 50%;
+}
+.parent > div:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 53px;
+    left: 0px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.parent > div:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 53px;
+    left: 0px;
+    background-color: rgb(198, 111, 11);
+    border-radius: 50%;
+}
+
+
+
+
+
